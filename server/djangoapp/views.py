@@ -52,3 +52,12 @@ def get_dealerships(request):
 # def add_review(request, dealer_id):
 # ...
 
+def get_about(request):
+    context = {}
+    if request.method == "GET":
+        return render(request, 'djangoapp/about.html', context)
+
+def get_contact(request):
+    context = {}
+    if request.method == "GET":
+        return render(request, 'djangoapp/contact.html', context)
